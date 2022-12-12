@@ -44,5 +44,5 @@ window.addEventListener("scroll", () => {
 const mapLink = document.getElementById("div_location")
 
 mapLink.addEventListener("click", () => {
-    //AN MAPS WEITERLEITEN
+    window.open("https://www.google.com/maps/place/Durlacher+Allee+21,+76131+Karlsruhe/@49.0081573,8.4206595,17z/data=!3m1!4b1!4m5!3m4!1s0x479706301e613111:0x97bbacdce32c62ea!8m2!3d49.0081573!4d8.4228482");
 })

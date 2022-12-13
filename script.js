@@ -46,3 +46,29 @@ const mapLink = document.getElementById("div_location")
 mapLink.addEventListener("click", () => {
     window.open("https://www.google.com/maps/place/Durlacher+Allee+21,+76131+Karlsruhe/@49.0081573,8.4206595,17z/data=!3m1!4b1!4m5!3m4!1s0x479706301e613111:0x97bbacdce32c62ea!8m2!3d49.0081573!4d8.4228482");
 })
+
+
+
+//------------
+const toggleMenu = document.getElementById('toggle-menu')
+const menuWrapper = document.getElementById('menu-wrapper')
+const body = document.getElementsByTagName('body')[0]
+
+toggleMenu.addEventListener('click', (e) => {
+	toggleMenu.classList.toggle('active')
+	menuWrapper.classList.toggle('active')
+
+	if (body.style.overflow !== 'hidden') body.style.overflow = 'auto'
+	else body.style.overflow = null
+})
+
+
+const scrollItems = document.querySelectorAll(".nav_link");
+scrollItems.forEach((item) => {
+	item.addEventListener("click", () => {
+		let element = document.getElementById(item.getAttribute("data-link"))
+		element.scrollIntoView({behavior:"smooth", block:"start"})
+		toggleMenu.classList.toggle('active')
+		menuWrapper.classList.toggle('active')
+	})
+})

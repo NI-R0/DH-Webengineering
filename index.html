@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/new.css">
+    <!-- <link rel="stylesheet" href="/style.css"> -->
     <title>Muckibude | Karlsruhe</title>
 </head>
 <body>
@@ -16,18 +17,26 @@
             </div>
         </div>
 
-        <div class="menu">
+        <div class="menu" id="menu-wrapper">
             <div class="menu_item menu_homepage">
-                <h4 class="menu_text"><a href="/index.html" class="nav_link">HOME</a></h4>
+                <h4 class="menu_text"><a href="/index.html" class="nav_link" data-link="home">HOME</a></h4>
             </div>
             <div class="menu_item menu_offers">
-                <h4 class="menu_text"><a href="#offers" class="nav_link">ANGEBOTE</a></h4>
+                <h4 class="menu_text"><a href="#offers" class="nav_link" data-link="offers">ANGEBOTE</a></h4>
             </div>
             <div class="menu_item menu_team">
-                <h4 class="menu_text"><a href="#team" class="nav_link">UNSER TEAM</a></h4>
+                <h4 class="menu_text"><a href="#team" class="nav_link" data-link="team">UNSER TEAM</a></h4>
             </div>
             <div class="menu_item menu_about">
-                <h4 class="menu_text"><a href="#about" class="nav_link">ÜBER UNS</a></h4>
+                <h4 class="menu_text"><a href="#about" class="nav_link" data-link="about">ÜBER UNS</a></h4>
+            </div>
+        </div>
+
+        <div class="menu-toggle" id="toggle-menu">
+            <div class="icon">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
             </div>
         </div>
     </header>
@@ -61,7 +70,6 @@
                         In unserem Fitnessstudio finden Sie eine große Auswahl an modernsten Geräten, <br> professionell betreuten Kursen und vielen weiteren Gesundheitsangeboten.
                     </div>
                     <div class="cards">
-                        <div class="card_row card_row1">
                             <div class="card card1">
                                 <div class="card_img_div">
                                     <img src="/src/9-colosseum-gym-galerie-14.jpg" alt="Geräteausstattung" class="card_img card_img1" width="1920" height="1281">
@@ -89,8 +97,6 @@
                                         </div>
                                     </div>
                                 </div>
-                        </div>
-                        <div class="card_row card_row2">
                             <div class="card card3">
                                 <div class="card_img_div">
                                     <img src="/src/hotel-alpenfeuer-montafon-finnische-sauna-01.jpg" alt="Sauna" class="card_img card_img3" width="3238" height="2162">
@@ -118,7 +124,6 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
                     </div>
                 </div>
             </section>

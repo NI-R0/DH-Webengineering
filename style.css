@@ -31,7 +31,7 @@
 body{
     font-size: 1.6rem;
     background: var(--color-black);
-    background-image: url("/src/front_image.jpg");
+    background-image: url("./src/front_image.jpg");
     background-repeat: no-repeat;
     height: calc(100vh - var(--nav-height-percent));
     background-position: 100% 50%;
@@ -335,9 +335,24 @@ a, i{
 .cover_button:active{
     background-color: var(--color-active-yellow);
 }
-@media (max-width: 1250px){
+@media (max-width: 1850px){
+    body{
+        background-size: 100%;
+    }
+}
+@media (max-width: 1480px){
     body{
         background-size: cover;
+    }
+}
+@media (max-width: 1300px){
+    body{
+        background-position: 80% 50%;
+    }
+}
+@media (max-width: 990px){
+    body{
+        background-position: 60% 50%;
     }
 }
 @media (max-width: 1110px){
@@ -345,7 +360,7 @@ a, i{
         background: linear-gradient(180deg, rgba(121,3,29,0) 60%, rgba(0,4,7,1) 100%), linear-gradient(90deg, rgba(0,4,7,1) 0%, rgba(0,4,7,1) 20%, rgba(121,3,29,0) 66%);
     }
 }
-@media (max-width: 950px){
+@media (max-width: 1110px){
     #home{
         background: linear-gradient(180deg, rgba(121,3,29,0) 60%, rgba(0,4,7,1) 100%);
     }

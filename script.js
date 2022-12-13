@@ -67,7 +67,7 @@ const scrollItems = document.querySelectorAll(".nav_link");
 scrollItems.forEach((item) => {
 	item.addEventListener("click", () => {
 		let element = document.getElementById(item.getAttribute("data-link"))
-		element.scrollIntoView({behavior:"smooth", block:"start"})
+		element.scrollIntoView({behavior:"smooth"})
 		toggleMenu.classList.toggle('active')
 		menuWrapper.classList.toggle('active')
 	})
